@@ -2,12 +2,24 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8" />
+	
+	
+	<!--Viewport Tag-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 	<title>Shape Up!</title>
 	<link rel="icon" href="images/favicon.ico">
 	<!--[if lt IE 9]> <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
 	<link rel="stylesheet" href="styles/normalize.css">
 	<link rel="stylesheet" href="styles/main.css">
-
+	<link rel="stylesheet" href="styles/slicknav.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="js/jquery.slicknav.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$('#nav_menu').slicknav({prependTo:"#mobilemenu"});
+	});
+	</script>
 
 </head>
 
@@ -20,12 +32,14 @@
 	</header>
 	
 	<!-- Horizontal Navigation Menu -->
+	<nav id="#mobilemenu"></nav>
 	<nav id="nav_menu">
 		<ul>
 			<li><a href="cardio/index.html">Cardio</a></li>
 			<li><a href="diet/index.html">Diet</a></li>
 			<li><a href="strength/index.html">Strength</a></li>
 			<li id="last"><a href="stress/index.html">Stress</a></li>
+			<li id="about"><a href="about/index.html">About</a></li>
 		</ul>
 	</nav>
 

@@ -1,3 +1,4 @@
+/* Universal Selector*/
 *{
     margin: 0;
     padding: 0;
@@ -23,8 +24,8 @@ body {
 }
 h1{ 
     font-size: 250%;
-    margin-left: 15px;
-    margin-top: 15px;
+    margin-left: 1em;
+    margin-top: 1em;
 }
 header {
     border-bottom: 5px solid steelblue;
@@ -45,11 +46,38 @@ header h3 {
 }
 header img {
     float: left;
-    margin-left: 10px;
-    margin-right: 20px;
+    margin-left: .5em;
+    margin-right: 1.5em;
 }
+/* Horizontal Menu Bar - W3 Float and Block Style */
+#nav_menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: steelblue;
+  }
+  
+#nav_menu ul li {
+    float: left;
+  }
+#nav_menu #about{
+      float: right;
+  }
 
-/* Horizontal Menu Bar Style*/
+#nav_menu ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 1.5em;
+    text-decoration: none;
+  }
+  
+#nav_menu ul li a:hover {
+    background-color: lightsteelblue;
+    color: black;
+  }
+/* Horizontal Menu Bar Style - Inline NavBar Style
 #nav_menu ul{
     list-style: none;
     text-align: center;
@@ -73,6 +101,7 @@ header img {
 #nav_menu ul li a:hover{
     color: red;
 }
+*/
 
 /* Vertical Navigation List*/
 #nav_list ul{
@@ -102,17 +131,21 @@ main{
 }
 section h2, section h3, aside h2{
     font-size: 150%;
-    margin-left: 15px;
+    margin-left: .5em;
 }
 section h2 {
-    margin: 10px 15px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+aside ul{
+    margin-left: 2em;
 }
 section p {
-    margin: 15px;
+    margin: 1em;
 }
 section blockquote {
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 3em;
+    margin-right: 3em;
     font-size: 90%;
     color: navy;
     border-left: 3px solid maroon;
@@ -175,8 +208,9 @@ aside a {
 font-size: 180%;
 color: maroon;
 }
-li {
+.sidebar li {
     margin-top: 5px;
+    margin-left: .5em;
 }
 
 footer {
@@ -188,7 +222,28 @@ footer p {
     font-size: 75%;
     text-align: center;
     color: white;
-    padding: 25px;
+    padding: 2em;
     font-weight: bold;
     font-variant: small-caps;
+}
+
+#mobilemenu{
+    display: none;
+}
+
+
+@media only screen and (max-width: 600px){
+    .homesection{
+        float: none;
+        width: 100%;
+    }
+    .sidebar{
+        width: 100%;
+    }
+
+
+
+}
+@media only screen and (max-width: 400px){
+
 }
