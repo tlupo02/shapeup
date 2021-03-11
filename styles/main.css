@@ -240,6 +240,18 @@ footer p {
     .sidebar{
         width: 100%;
     }
+    #nav_menu{
+        display: none;
+    }
+    #mobilemenu{
+        display: block;
+        background-color: steelblue !important;
+    }
+    .slicknav_menu {
+        display: block;
+        background-color: steelblue;
+    }
+
 
 
 
